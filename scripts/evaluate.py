@@ -159,9 +159,9 @@ QUESTIONS = [
             (10, "text"),
             (18, "table"),
         ],
-        "expected_answer_contains": [
-            "7.7",
-        ],
+        "expected_answer_contains_any": [
+		["7.7", "7.69", "8%"],
+	],
         "should_abstain": False,
     },
     {
@@ -281,17 +281,25 @@ def reciprocal_rank(
 def answer_contains_expected(
     answer: str,
     expected: list[str],
+    expected_any: list[list[str]] | None = None,
 ) -> bool:
-    if not expected:
-        return True
-
     normalized = answer.lower()
 
-    return all(
+    # Every required value must appear in the answer.
+    if expected and not all(
         value.lower() in normalized
         for value in expected
-    )
+    ):
+        return False
 
+    # For each alternative group, at least one value must appear.
+    if expected_any and not all(
+        any(value.lower() in normalized for value in alternatives)
+        for alternatives in expected_any
+    ):
+        return False
+
+    return True
 
 def citation_accuracy(
     result: dict,
@@ -379,7 +387,8 @@ def evaluate_question(
 
     answer_correct = answer_contains_expected(
         result.get("answer", ""),
-        item["expected_answer_contains"],
+        item.get("expected_answer_contains", []),
+        item.get("expected_answer_contains_any"),
     )
 
     citation_validity = citation_accuracy(

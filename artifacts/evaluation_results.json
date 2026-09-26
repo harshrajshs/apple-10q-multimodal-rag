@@ -5,19 +5,19 @@
     "recall_at_5": 1.0,
     "recall_at_8": 1.0,
     "mrr": 0.775,
-    "answer_accuracy": 0.9,
+    "answer_accuracy": 1.0,
     "citation_accuracy": 1.0,
     "abstention_accuracy": 1.0,
-    "mean_latency_ms": 4333.43,
-    "median_latency_ms": 4086.3,
-    "max_latency_ms": 5789.23
+    "mean_latency_ms": 5724.55,
+    "median_latency_ms": 5042.39,
+    "max_latency_ms": 8178.92
   },
   "results": [
     {
       "id": "q01",
       "category": "text",
       "question": "What is the purpose of Apple's Form 10-Q?",
-      "answer": "The purpose of Apple's Form 10-Q is to provide a quarterly report pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934. It contains financial statements, management's discussion and analysis of financial condition and results of operations, disclosures about market risk, controls and procedures, legal proceedings, risk factors, and other necessary information to fairly present the company's financial condition and results of operations for the fiscal quarter. The Form 10-Q includes forward-looking statements and is filed to comply with regulatory requirements, providing transparency and periodic updates to investors and the SEC. Apple\u2019s CEO and CFO certify that the Form 10-Q fully complies with SEC requirements and fairly presents the company\u2019s financial condition and results of operations [p.1, figure; p.3; p.8; p.17; p.25; p.28].",
+      "answer": "The purpose of Apple's Form 10-Q is to provide a quarterly report pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934. It includes financial statements, management\u2019s discussion and analysis of financial condition and results of operations, disclosures about market risk, controls and procedures, legal proceedings, risk factors, unregistered sales of equity securities, and other required information. The Form 10-Q also contains forward-looking statements and is intended to fairly present the financial condition and results of operations of Apple Inc. for the relevant fiscal quarter. It is a regulatory filing that ensures compliance with securities laws and provides transparency to investors and the public about Apple\u2019s quarterly financial performance and other business matters under the law [p.1, figure; p.3; p.17; p.25; p.28].",
       "citations": [
         {
           "page": 1,
@@ -99,17 +99,17 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 5789.23
+      "latency_ms": 8178.92
     },
     {
       "id": "q02",
       "category": "table",
       "question": "What was Apple's total net sales for the nine months ended June 25, 2022?",
-      "answer": "Apple's total net sales for the nine months ended June 25, 2022, were $304,182 million [p.4; p.10; p.18, table].",
+      "answer": "Apple's total net sales for the nine months ended June 25, 2022, were $304,182 million [p.4, table; p.10; p.18, table].",
       "citations": [
         {
           "page": 4,
-          "modality": "text"
+          "modality": "table"
         },
         {
           "page": 10,
@@ -179,13 +179,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 4404.01
+      "latency_ms": 5162.81
     },
     {
       "id": "q03",
       "category": "table",
       "question": "What were Apple's total operating expenses for the nine months ended June 25, 2022?",
-      "answer": "Apple's total operating expenses for the nine months ended June 25, 2022 were $38,144 million [p.4, table; p.21, table; p.21].",
+      "answer": "Apple's total operating expenses for the nine months ended June 25, 2022, were $38,144 million. This includes research and development expense of $19,490 million and selling, general and administrative expense of $18,654 million [p.4, table; p.21, table; p.21].",
       "citations": [
         {
           "page": 4,
@@ -259,13 +259,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 3994.1
+      "latency_ms": 4905.56
     },
     {
       "id": "q04",
       "category": "table",
       "question": "What was Apple's net income for the nine months ended June 25, 2022?",
-      "answer": "Apple's net income for the nine months ended June 25, 2022, was $79,082 million [p.4; p.5]",
+      "answer": "Apple's net income for the nine months ended June 25, 2022, was $79,082 million [p.4; p.5].",
       "citations": [
         {
           "page": 4,
@@ -335,13 +335,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 4061.94
+      "latency_ms": 4604.49
     },
     {
       "id": "q05",
       "category": "table",
       "question": "What was Apple's gross margin for the three months ended June 25, 2022?",
-      "answer": "Apple's gross margin for the three months ended June 25, 2022 was $35,885 million, and the total gross margin percentage was 43.3% for that period [p.4; p.20, table].",
+      "answer": "Apple's gross margin for the three months ended June 25, 2022 was $35,885 million, which represents a gross margin percentage of 43.3% [p.4; p.20, table].",
       "citations": [
         {
           "page": 4,
@@ -411,13 +411,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 4121.36
+      "latency_ms": 4811.11
     },
     {
       "id": "q06",
       "category": "table",
       "question": "What were Apple's research and development expenses for the nine months ended June 25, 2022?",
-      "answer": "Apple's research and development expenses for the nine months ended June 25, 2022 were $19,490 million [p.4, table; p.16, table; p.16; p.21].",
+      "answer": "Apple's research and development expenses for the nine months ended June 25, 2022, were $19,490 million [p.4, table; p.16, table; p.16; p.21].",
       "citations": [
         {
           "page": 4,
@@ -495,13 +495,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 3686.72
+      "latency_ms": 4921.96
     },
     {
       "id": "q07",
       "category": "table",
       "question": "What were Apple's total net sales by geographic region for the nine months ended June 25, 2022?",
-      "answer": "Apple's total net sales by geographic region for the nine months ended June 25, 2022 were as follows (in millions):\n\n- Americas: $129,850\n- Europe: $72,323\n- Greater China: $58,730\n- Japan: $20,277\n- Rest of Asia Pacific: $23,002\n\nTotal net sales: $304,182 million\n\nThis data is from the segment information by geographic region for the nine months ended June 25, 2022 [p.16; p.19].",
+      "answer": "Apple's total net sales by geographic region for the nine months ended June 25, 2022 were as follows (in millions):\n\n- Americas: $129,850\n- Europe: $72,323\n- Greater China: $58,730\n- Japan: $20,277\n- Rest of Asia Pacific: $23,002\n\nTotal net sales across all regions: $304,182 million [p.16; p.19].",
       "citations": [
         {
           "page": 16,
@@ -571,13 +571,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 3991.45
+      "latency_ms": 4807.34
     },
     {
       "id": "q08",
       "category": "calculation",
       "question": "By what percentage did Apple's total net sales increase from the nine months ended June 26, 2021 to the nine months ended June 25, 2022?",
-      "answer": "Apple's total net sales for the nine months ended June 25, 2022 were $304,182 million, and for the nine months ended June 26, 2021 were $282,457 million. The percentage increase in total net sales is 8% [p.18, table; p.10, table; p.6].",
+      "answer": "Apple's total net sales for the nine months ended June 26, 2021 were $282,457 million, and for the nine months ended June 25, 2022 were $304,182 million. The percentage increase in total net sales from 2021 to 2022 for the nine-month period is 8% [p.18, table; p.10, table].",
       "citations": [
         {
           "page": 18,
@@ -643,17 +643,17 @@
         "recall_at_5": 1.0,
         "recall_at_8": 1.0,
         "mrr": 0.5,
-        "answer_correct": false,
+        "answer_correct": true,
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 3820.31
+      "latency_ms": 7116.89
     },
     {
       "id": "q09",
       "category": "figure",
       "question": "What information is shown in the figure in the document?",
-      "answer": "The figure on page 1 in the document shows the cover page of the quarterly SEC Form 10-Q filing for Apple Inc. for the quarter ended June 25, 2022. It includes the following information visually presented:\n\n- The report title: \"QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.\"\n- The Commission File Number: 001-36743.\n- The registrant's name and address: Apple Inc., One Apple Park Way, Cupertino, California, 95014.\n- A telephone number: (408) 996-1010.\n- Apple's IRS Employer Identification Number (EIN): 94-2404110.\n- A table listing types of securities registered with details:\n  - Common Stock with par value, trading symbol \"AAPL,\" registered on The Nasdaq Stock Market LLC.\n  - Various notes with different interest rates and maturity years, registered on The Nasdaq Stock Market LLC without trading symbols.\n- Boxes checked to certify that all required reports and data files have been filed and submitted.\n- Classification of the registrant as a large accelerated filer, and not an accelerated filer, smaller reporting company, or emerging growth company.\n\nNo financial data or trends are presented; the figure contains identification, filing, and securities registration information [p.1, figure].",
+      "answer": "The figure shown in the document on page 1 is the cover page of Apple Inc.'s Quarterly SEC Form 10-Q for the quarterly period ended June 25, 2022. It provides identification and filing information, including:\n\n- The form type and SEC filing section.\n- Commission File Number.\n- Registrant's name (Apple Inc.), address (One Apple Park Way, Cupertino, California 95014), and telephone number ((408) 996-1010).\n- Apple's IRS Employer Identification Number (94-2404110).\n- A table listing types of securities registered (Common Stock and various notes due from 2022 through 2042), their par value, trading symbols where available (\"AAPL\" for common stock), and the exchanges they are registered on (The Nasdaq Stock Market LLC).\n- Registrant's filing status boxes checked (large accelerated filer, timely filings, interactive data files submitted).\n- No financial figures or trends are presented; it is primarily an identification and securities registration page.\n\nThis page does not contain financial data but serves as the official filing cover page with legal and regulatory information about the report and the company [p.1, figure].",
       "citations": [
         {
           "page": 1,
@@ -719,13 +719,13 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 5354.55
+      "latency_ms": 7013.56
     },
     {
       "id": "q10",
       "category": "abstention",
       "question": "What was Apple's revenue from a product launched in 2035?",
-      "answer": "The document evidence is insufficient to answer this question. There is no information in the provided evidence about any Apple product launched in 2035 or its associated revenue. The financial data and notes cover periods only up to June 25, 2022, and do not mention any product launches in future years such as 2035 [p.10; p.4].",
+      "answer": "The document evidence is insufficient to answer the question about Apple's revenue from a product launched in 2035. There is no information provided about any product launched in 2035 or its revenue in the supplied evidence. The revenue data available are for various product categories only for the periods ended June 25, 2022, and June 26, 2021 [p.10; p.4].",
       "citations": [
         {
           "page": 10,
@@ -795,7 +795,7 @@
         "citation_accuracy": 1.0,
         "abstention_correct": true
       },
-      "latency_ms": 4110.66
+      "latency_ms": 5722.9
     }
   ]
 }

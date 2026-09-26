@@ -1,0 +1,801 @@
+{
+  "summary": {
+    "num_questions": 10,
+    "recall_at_1": 0.6,
+    "recall_at_5": 1.0,
+    "recall_at_8": 1.0,
+    "mrr": 0.775,
+    "answer_accuracy": 0.9,
+    "citation_accuracy": 1.0,
+    "abstention_accuracy": 1.0,
+    "mean_latency_ms": 4333.43,
+    "median_latency_ms": 4086.3,
+    "max_latency_ms": 5789.23
+  },
+  "results": [
+    {
+      "id": "q01",
+      "category": "text",
+      "question": "What is the purpose of Apple's Form 10-Q?",
+      "answer": "The purpose of Apple's Form 10-Q is to provide a quarterly report pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934. It contains financial statements, management's discussion and analysis of financial condition and results of operations, disclosures about market risk, controls and procedures, legal proceedings, risk factors, and other necessary information to fairly present the company's financial condition and results of operations for the fiscal quarter. The Form 10-Q includes forward-looking statements and is filed to comply with regulatory requirements, providing transparency and periodic updates to investors and the SEC. Apple\u2019s CEO and CFO certify that the Form 10-Q fully complies with SEC requirements and fairly presents the company\u2019s financial condition and results of operations [p.1, figure; p.3; p.8; p.17; p.25; p.28].",
+      "citations": [
+        {
+          "page": 1,
+          "modality": "figure"
+        },
+        {
+          "page": 3,
+          "modality": "text"
+        },
+        {
+          "page": 17,
+          "modality": "text"
+        },
+        {
+          "page": 25,
+          "modality": "text"
+        },
+        {
+          "page": 28,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 17,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:17"
+        },
+        {
+          "page": 3,
+          "modality": "text",
+          "score": 0.80429,
+          "source": "page:3"
+        },
+        {
+          "page": 1,
+          "modality": "figure",
+          "score": 0.76537,
+          "source": "page:1"
+        },
+        {
+          "page": 28,
+          "modality": "text",
+          "score": 0.72841,
+          "source": "page:28"
+        },
+        {
+          "page": 26,
+          "modality": "text",
+          "score": 0.72492,
+          "source": "page:26"
+        },
+        {
+          "page": 25,
+          "modality": "text",
+          "score": 0.67524,
+          "source": "page:25"
+        },
+        {
+          "page": 24,
+          "modality": "text",
+          "score": 0.62287,
+          "source": "page:24"
+        },
+        {
+          "page": 1,
+          "modality": "text",
+          "score": 0.57757,
+          "source": "page:1"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 5789.23
+    },
+    {
+      "id": "q02",
+      "category": "table",
+      "question": "What was Apple's total net sales for the nine months ended June 25, 2022?",
+      "answer": "Apple's total net sales for the nine months ended June 25, 2022, were $304,182 million [p.4; p.10; p.18, table].",
+      "citations": [
+        {
+          "page": 4,
+          "modality": "text"
+        },
+        {
+          "page": 10,
+          "modality": "text"
+        },
+        {
+          "page": 18,
+          "modality": "table"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:4"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.84124,
+          "source": "page:10"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.7971,
+          "source": "page:16"
+        },
+        {
+          "page": 18,
+          "modality": "table",
+          "score": 0.76172,
+          "source": "page:18:table:0"
+        },
+        {
+          "page": 21,
+          "modality": "table",
+          "score": 0.7351,
+          "source": "page:21:table:0"
+        },
+        {
+          "page": 5,
+          "modality": "text",
+          "score": 0.68996,
+          "source": "page:5"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.66686,
+          "source": "page:7"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.49555,
+          "source": "page:4:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 4404.01
+    },
+    {
+      "id": "q03",
+      "category": "table",
+      "question": "What were Apple's total operating expenses for the nine months ended June 25, 2022?",
+      "answer": "Apple's total operating expenses for the nine months ended June 25, 2022 were $38,144 million [p.4, table; p.21, table; p.21].",
+      "citations": [
+        {
+          "page": 4,
+          "modality": "table"
+        },
+        {
+          "page": 21,
+          "modality": "table"
+        },
+        {
+          "page": 21,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:16"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.83191,
+          "source": "page:4"
+        },
+        {
+          "page": 8,
+          "modality": "text",
+          "score": 0.80321,
+          "source": "page:8"
+        },
+        {
+          "page": 21,
+          "modality": "table",
+          "score": 0.71596,
+          "source": "page:21:table:0"
+        },
+        {
+          "page": 21,
+          "modality": "text",
+          "score": 0.70524,
+          "source": "page:21"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.65168,
+          "source": "page:10"
+        },
+        {
+          "page": 16,
+          "modality": "table",
+          "score": 0.64814,
+          "source": "page:16:table:1"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.47293,
+          "source": "page:4:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 0.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.5,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 3994.1
+    },
+    {
+      "id": "q04",
+      "category": "table",
+      "question": "What was Apple's net income for the nine months ended June 25, 2022?",
+      "answer": "Apple's net income for the nine months ended June 25, 2022, was $79,082 million [p.4; p.5]",
+      "citations": [
+        {
+          "page": 4,
+          "modality": "text"
+        },
+        {
+          "page": 5,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 5,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:5"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.78949,
+          "source": "page:4"
+        },
+        {
+          "page": 8,
+          "modality": "text",
+          "score": 0.77517,
+          "source": "page:8"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.76892,
+          "source": "page:16"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.75716,
+          "source": "page:7"
+        },
+        {
+          "page": 16,
+          "modality": "table",
+          "score": 0.60011,
+          "source": "page:16:table:1"
+        },
+        {
+          "page": 18,
+          "modality": "table",
+          "score": 0.59081,
+          "source": "page:18:table:0"
+        },
+        {
+          "page": 5,
+          "modality": "table",
+          "score": 0.56813,
+          "source": "page:5:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 0.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.5,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 4061.94
+    },
+    {
+      "id": "q05",
+      "category": "table",
+      "question": "What was Apple's gross margin for the three months ended June 25, 2022?",
+      "answer": "Apple's gross margin for the three months ended June 25, 2022 was $35,885 million, and the total gross margin percentage was 43.3% for that period [p.4; p.20, table].",
+      "citations": [
+        {
+          "page": 4,
+          "modality": "text"
+        },
+        {
+          "page": 20,
+          "modality": "table"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:4"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.69977,
+          "source": "page:7"
+        },
+        {
+          "page": 20,
+          "modality": "table",
+          "score": 0.69918,
+          "source": "page:20:table:1"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.65506,
+          "source": "page:10"
+        },
+        {
+          "page": 20,
+          "modality": "table",
+          "score": 0.65099,
+          "source": "page:20:table:0"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.62185,
+          "source": "page:16"
+        },
+        {
+          "page": 20,
+          "modality": "text",
+          "score": 0.51166,
+          "source": "page:20"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.47101,
+          "source": "page:4:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 4121.36
+    },
+    {
+      "id": "q06",
+      "category": "table",
+      "question": "What were Apple's research and development expenses for the nine months ended June 25, 2022?",
+      "answer": "Apple's research and development expenses for the nine months ended June 25, 2022 were $19,490 million [p.4, table; p.16, table; p.16; p.21].",
+      "citations": [
+        {
+          "page": 4,
+          "modality": "table"
+        },
+        {
+          "page": 16,
+          "modality": "table"
+        },
+        {
+          "page": 16,
+          "modality": "text"
+        },
+        {
+          "page": 21,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 16,
+          "modality": "table",
+          "score": 0.90518,
+          "source": "page:16:table:1"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:16"
+        },
+        {
+          "page": 21,
+          "modality": "text",
+          "score": 0.79719,
+          "source": "page:21"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.7349,
+          "source": "page:4"
+        },
+        {
+          "page": 8,
+          "modality": "text",
+          "score": 0.72922,
+          "source": "page:8"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.70732,
+          "source": "page:4:table:0"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.68416,
+          "source": "page:10"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.64781,
+          "source": "page:7"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 0.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.25,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 3686.72
+    },
+    {
+      "id": "q07",
+      "category": "table",
+      "question": "What were Apple's total net sales by geographic region for the nine months ended June 25, 2022?",
+      "answer": "Apple's total net sales by geographic region for the nine months ended June 25, 2022 were as follows (in millions):\n\n- Americas: $129,850\n- Europe: $72,323\n- Greater China: $58,730\n- Japan: $20,277\n- Rest of Asia Pacific: $23,002\n\nTotal net sales: $304,182 million\n\nThis data is from the segment information by geographic region for the nine months ended June 25, 2022 [p.16; p.19].",
+      "citations": [
+        {
+          "page": 16,
+          "modality": "text"
+        },
+        {
+          "page": 19,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:10"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.81692,
+          "source": "page:16"
+        },
+        {
+          "page": 18,
+          "modality": "table",
+          "score": 0.79962,
+          "source": "page:18:table:0"
+        },
+        {
+          "page": 21,
+          "modality": "table",
+          "score": 0.73257,
+          "source": "page:21:table:0"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.72269,
+          "source": "page:4"
+        },
+        {
+          "page": 19,
+          "modality": "text",
+          "score": 0.6745,
+          "source": "page:19"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.58162,
+          "source": "page:7"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.41581,
+          "source": "page:4:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 3991.45
+    },
+    {
+      "id": "q08",
+      "category": "calculation",
+      "question": "By what percentage did Apple's total net sales increase from the nine months ended June 26, 2021 to the nine months ended June 25, 2022?",
+      "answer": "Apple's total net sales for the nine months ended June 25, 2022 were $304,182 million, and for the nine months ended June 26, 2021 were $282,457 million. The percentage increase in total net sales is 8% [p.18, table; p.10, table; p.6].",
+      "citations": [
+        {
+          "page": 18,
+          "modality": "table"
+        },
+        {
+          "page": 10,
+          "modality": "table"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 21,
+          "modality": "table",
+          "score": 0.97482,
+          "source": "page:21:table:0"
+        },
+        {
+          "page": 18,
+          "modality": "table",
+          "score": 0.92846,
+          "source": "page:18:table:0"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:10"
+        },
+        {
+          "page": 16,
+          "modality": "text",
+          "score": 0.82012,
+          "source": "page:16"
+        },
+        {
+          "page": 20,
+          "modality": "text",
+          "score": 0.81773,
+          "source": "page:20"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.81435,
+          "source": "page:4"
+        },
+        {
+          "page": 19,
+          "modality": "text",
+          "score": 0.79251,
+          "source": "page:19"
+        },
+        {
+          "page": 10,
+          "modality": "table",
+          "score": 0.78085,
+          "source": "page:10:table:0"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 0.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.5,
+        "answer_correct": false,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 3820.31
+    },
+    {
+      "id": "q09",
+      "category": "figure",
+      "question": "What information is shown in the figure in the document?",
+      "answer": "The figure on page 1 in the document shows the cover page of the quarterly SEC Form 10-Q filing for Apple Inc. for the quarter ended June 25, 2022. It includes the following information visually presented:\n\n- The report title: \"QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.\"\n- The Commission File Number: 001-36743.\n- The registrant's name and address: Apple Inc., One Apple Park Way, Cupertino, California, 95014.\n- A telephone number: (408) 996-1010.\n- Apple's IRS Employer Identification Number (EIN): 94-2404110.\n- A table listing types of securities registered with details:\n  - Common Stock with par value, trading symbol \"AAPL,\" registered on The Nasdaq Stock Market LLC.\n  - Various notes with different interest rates and maturity years, registered on The Nasdaq Stock Market LLC without trading symbols.\n- Boxes checked to certify that all required reports and data files have been filed and submitted.\n- Classification of the registrant as a large accelerated filer, and not an accelerated filer, smaller reporting company, or emerging growth company.\n\nNo financial data or trends are presented; the figure contains identification, filing, and securities registration information [p.1, figure].",
+      "citations": [
+        {
+          "page": 1,
+          "modality": "figure"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 1,
+          "modality": "figure",
+          "score": 0.85,
+          "source": "page:1"
+        },
+        {
+          "page": 17,
+          "modality": "text",
+          "score": 0.70543,
+          "source": "page:17"
+        },
+        {
+          "page": 27,
+          "modality": "text",
+          "score": 0.57472,
+          "source": "page:27"
+        },
+        {
+          "page": 26,
+          "modality": "text",
+          "score": 0.57197,
+          "source": "page:26"
+        },
+        {
+          "page": 9,
+          "modality": "text",
+          "score": 0.46768,
+          "source": "page:9"
+        },
+        {
+          "page": 24,
+          "modality": "text",
+          "score": 0.42658,
+          "source": "page:24"
+        },
+        {
+          "page": 4,
+          "modality": "table",
+          "score": 0.39649,
+          "source": "page:4:table:0"
+        },
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.39125,
+          "source": "page:10"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 5354.55
+    },
+    {
+      "id": "q10",
+      "category": "abstention",
+      "question": "What was Apple's revenue from a product launched in 2035?",
+      "answer": "The document evidence is insufficient to answer this question. There is no information in the provided evidence about any Apple product launched in 2035 or its associated revenue. The financial data and notes cover periods only up to June 25, 2022, and do not mention any product launches in future years such as 2035 [p.10; p.4].",
+      "citations": [
+        {
+          "page": 10,
+          "modality": "text"
+        },
+        {
+          "page": 4,
+          "modality": "text"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "page": 10,
+          "modality": "text",
+          "score": 0.85,
+          "source": "page:10"
+        },
+        {
+          "page": 4,
+          "modality": "text",
+          "score": 0.80389,
+          "source": "page:4"
+        },
+        {
+          "page": 8,
+          "modality": "text",
+          "score": 0.64963,
+          "source": "page:8"
+        },
+        {
+          "page": 7,
+          "modality": "text",
+          "score": 0.60719,
+          "source": "page:7"
+        },
+        {
+          "page": 9,
+          "modality": "text",
+          "score": 0.54476,
+          "source": "page:9"
+        },
+        {
+          "page": 5,
+          "modality": "text",
+          "score": 0.52021,
+          "source": "page:5"
+        },
+        {
+          "page": 1,
+          "modality": "figure",
+          "score": 0.39715,
+          "source": "page:1"
+        },
+        {
+          "page": 3,
+          "modality": "text",
+          "score": 0.27636,
+          "source": "page:3"
+        }
+      ],
+      "metrics": {
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correct": true,
+        "citation_accuracy": 1.0,
+        "abstention_correct": true
+      },
+      "latency_ms": 4110.66
+    }
+  ]
+}

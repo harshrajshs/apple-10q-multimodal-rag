@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.gitignore
+.env
+*.log
+
+artifacts/evaluation_results.json
+
+.ipynb_checkpoints/
+.vscode/
+.idea/
